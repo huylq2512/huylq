@@ -11,7 +11,9 @@ CSS = """
 body{margin:0;font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:9.4pt;line-height:1.38;color:#1a1a1a}
 .contact{background:#f4f7fb;text-align:center;font-size:8.2pt;padding:7px 0;color:#333;border-bottom:1px solid #e0e6ee}
 .contact span{margin:0 12px}
-.head{background:#f4f7fb;text-align:center;padding:14px 0 10px;border-bottom:2px solid #1f3a5f}
+.head{background:#f4f7fb;text-align:center;padding:14px 0 10px;border-bottom:2px solid #1f3a5f;position:relative;min-height:112px}
+.head img{position:absolute;left:34px;top:10px;width:72px;height:96px;object-fit:cover;border:1.5px solid #1f3a5f}
+.head .t{padding-top:22px}
 .head h1{font-family:'Merriweather',serif;font-size:17pt;margin:0;color:#14284a}
 .head div{font-size:9pt;font-weight:600;color:#1f3a5f;margin-top:4px}
 .page{padding:0 34px}
@@ -49,6 +51,7 @@ VI = dict(
   ("Odoo Development · Team Lead","03/2026 - Hiện tại","Công ty Bắc Hà",[
    "Tham gia dự án AVB về bán hàng, kế toán và dự án Corp về bán hàng B2B, tích hợp Salesforce.",
    "Đảm nhiệm vai trò Team Lead, dẫn dắt nhóm phát triển nhỏ cho hai dự án AVB và Corp.",
+   "Thực hiện dự án quản lý sản xuất và kho cho công ty dược (Odoo 19 Enterprise), trong đó có phiếu tính giá thành (Costing Sheet).",
    "Xây dựng từ xa chương trình kiểm thử cho khách hàng sản xuất bo mạch điện tử: phân tích Test Specification, cấu hình Test Station và Test Sequence, thực hiện GR&R và xây dựng công cụ tính GR&R, theo dõi CPK/FPY/UPH, xác nhận PVT; viết logic trước khi có thiết bị thật và bàn giao cho IT phía khách hàng triển khai thực tế.",
    "Xây dựng công cụ CLI bằng Python (Pandas, OpenPyXL, Schedule) tự động gom, chuẩn hóa và đối soát số liệu từ 15–20 file, xuất báo cáo Excel; rút thời gian xử lý hằng ngày từ hơn 1 tiếng xuống dưới 30 giây.",
    "Xây dựng bot Python (Cronjob, Redmine, Webhooks, Telegram) giám sát log, dịch vụ và tiến độ công việc, gửi cảnh báo tức thời; giúp phát hiện sự cố sớm hơn 50%."]),
@@ -84,6 +87,10 @@ VI = dict(
    "Phát triển hệ thống bán hàng B2B trên Odoo, tích hợp Salesforce để đồng bộ dữ liệu khách hàng và hoạt động kinh doanh.",
    "Dẫn dắt nhóm phát triển nhỏ; tùy chỉnh quy trình báo giá, đơn bán và chính sách giá cho khách hàng doanh nghiệp.",
    "Phát triển API tích hợp Odoo – Salesforce, xử lý ánh xạ, đồng bộ dữ liệu và ghi nhận lỗi."]),
+  ("Quản lý sản xuất và kho cho công ty dược (Dược Kim Bảng)","Bắc Hà · Odoo 19 Enterprise · Python, PostgreSQL, OWL",[
+   "Thực hiện hệ thống quản lý sản xuất, giá thành và kho cho công ty dược trên Odoo 19.",
+   "Thực hiện phiếu tính giá thành (Costing Sheet): cách nhập liệu và hiển thị trên form.",
+   "Thực hiện nghiệm thu theo yêu cầu nghiệp vụ và sửa lỗi."]),
   ("ERP Tân Phát","Mate JSC · Team Lead · 11 tháng · 6 thành viên (1 PM, 1 Team Lead, 3 Dev, 1 BA)",[
    "Triển khai ERP cho Công ty Tân Phát (bán hàng, thương mại điện tử): Mua hàng, Bán hàng, Loyalty, Website, CRM.",
    "Nhận yêu cầu từ PM, lập kế hoạch, phân công nhiệm vụ và review giải pháp, mã nguồn."]),
@@ -102,6 +109,7 @@ EN = dict(
   ("Odoo Development · Team Lead","03/2026 - Present","Bac Ha Company",[
    "Worked on the AVB project (sales and accounting) and the Corp project (B2B sales with Salesforce integration).",
    "Served as Team Lead of a small development team for both AVB and Corp.",
+   "Worked on a manufacturing and warehouse project for a pharmaceutical company (Odoo 19 Enterprise), including the Costing Sheet.",
    "Built a test program remotely for a client that makes electronic control boards: read the Test Specification, set up the Test Station and Test Sequence, did GR&amp;R and built a GR&amp;R calculation tool, tracked CPK/FPY/UPH and checked PVT. Wrote the logic first because real equipment was not available, then handed it to the client's IT team to deploy.",
    "Built a Python CLI tool (Pandas, OpenPyXL, Schedule) that collects, cleans and compares data from 15–20 files and exports Excel reports; cut daily work from over 1 hour to under 30 seconds.",
    "Built a Python bot (Cronjob, Redmine, Webhooks, Telegram) that checks logs, services and task progress and sends alerts right away; the team found problems 50% sooner."]),
@@ -137,6 +145,10 @@ EN = dict(
    "Built a B2B sales management system on Odoo integrated with Salesforce to sync customer and business data.",
    "Led a small development team; customized quotation, sales order and pricing flows for business customers.",
    "Built the Odoo – Salesforce API for data mapping, syncing and error logging."]),
+  ("Manufacturing &amp; Warehouse Management for a Pharmaceutical Company (Duoc Kim Bang)","Bac Ha · Odoo 19 Enterprise · Python, PostgreSQL, OWL",[
+   "Worked on the manufacturing, costing and warehouse system for a pharmaceutical company on Odoo 19.",
+   "Worked on the Costing Sheet: how data is entered and shown on the form.",
+   "Handled acceptance against business requirements and fixes."]),
   ("Tan Phat ERP","Mate JSC · Team Lead · 11 months · 6 members (1 PM, 1 Team Lead, 3 Dev, 1 BA)",[
    "Delivered an ERP for Tan Phat Company (sales and e-commerce): Purchase, Sales, Loyalty, Website and CRM.",
    "Got requirements from the PM, planned and assigned tasks, and reviewed solutions and code."]),
@@ -150,7 +162,7 @@ EN = dict(
 def render(d):
     body = f"""<!doctype html><html lang="{d['lang']}"><head><meta charset="utf-8"><title>Luu Quang Huy CV</title><style>{CSS}</style></head><body>
 <div class="contact"><span>✉ huylq25122000@gmail.com</span><span>☎ 0983.840.617</span><span>⌖ {d['contact_loc']}</span></div>
-<div class="head"><h1>Lưu Quang Huy</h1><div>{d['title']}</div></div><div class="page">
+<div class="head"><img src="photo.jpg" alt=""><div class="t"><h1>Lưu Quang Huy</h1><div>{d['title']}</div></div></div><div class="page">
 <h2>{d['h_sum']}</h2><div>{d['summary']}</div>
 <h2>{d['h_skill']}</h2><div>Python · SQL · JavaScript · Git · Docker · Linux · API &amp; Webhook · REST API · Pandas · OpenPyXL</div>
 <h2>{d['h_exp']}</h2>{jobs(d['exp'])}
