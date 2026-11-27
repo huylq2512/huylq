@@ -91,7 +91,7 @@ VI = dict(
    "Phát triển hệ thống bán hàng B2B trên Odoo, tích hợp Salesforce để đồng bộ dữ liệu khách hàng và hoạt động kinh doanh.",
    "Tùy chỉnh quy trình báo giá, đơn bán và chính sách giá cho khách hàng doanh nghiệp.",
    "Phát triển API tích hợp Odoo – Salesforce, xử lý ánh xạ, đồng bộ dữ liệu và ghi nhận lỗi."]),
-  ("Quản lý sản xuất và kho cho công ty dược (Dược Kim Bảng)","Bắc Hà · Odoo 19 Enterprise · Python, PostgreSQL, OWL",[
+  ("Quản lý sản xuất và kho cho công ty dược","Bắc Hà · Odoo 19 Enterprise · Python, PostgreSQL, OWL",[
    "Thực hiện quy trình sản xuất thực phẩm bảo vệ sức khỏe trên Odoo 19: từ nghiên cứu phát triển mẫu (R&amp;D), tính giá thành và báo giá, đến lệnh sản xuất, kho, mua hàng và kiểm soát chất lượng.",
    "Thực hiện phiếu tính giá thành (Costing Sheet): nhập nguyên liệu, vật tư tiêu hao, bao bì cấp 1 và 2 theo từng quy cách đóng gói, chi phí sản xuất chung, lợi nhuận và VAT; duyệt nhiều cấp (chuyên môn, kinh doanh, người duyệt cuối) rồi tạo báo giá và xuất Excel.",
    "Thực hiện luồng R&amp;D: quản lý các vòng làm mẫu, mẫu thử và tài liệu, liên kết với phiếu tính giá thành.",
@@ -112,8 +112,7 @@ VI = dict(
   ("E-learning","Mate JSC · 4 tháng · 9 thành viên (1 PM, 2 BA, 2 QA, 4 Dev)"),
   ("Hồ sơ bệnh án điện tử và quản lý bệnh viện","Freelancer · 03/2025 - 07/2025 · 6 thành viên (1 PM, 5 Dev)"),
   ("Nâng cấp sản phẩm Viindoo","11/2022 - 07/2023 · 21 thành viên (2 PM, 8 QA, 11 Dev)")],
- edu=[("Chuyên ngành Công nghệ thông tin","Trường Cao đẳng FPT Polytechnic","08/2018 - 06/2021 · GPA 3.3"),
-      ("Chuyên ngành Công nghệ thông tin","Trường Đại học Mở Hà Nội","03/2024 - Hiện tại")],
+ edu=[("Chuyên ngành Công nghệ thông tin","Trường Đại học Mở Hà Nội","GPA 3.6")],
  out="LuuQuangHuy_CV_VI.pdf")
 
 EN = dict(
@@ -162,7 +161,7 @@ EN = dict(
    "Built a B2B sales management system on Odoo integrated with Salesforce to sync customer and business data.",
    "Customized quotation, sales order and pricing flows for business customers.",
    "Built the Odoo – Salesforce API for data mapping, syncing and error logging."]),
-  ("Manufacturing &amp; Warehouse Management for a Pharmaceutical Company (Duoc Kim Bang)","Bac Ha · Odoo 19 Enterprise · Python, PostgreSQL, OWL",[
+  ("Manufacturing &amp; Warehouse Management for a Pharmaceutical Company","Bac Ha · Odoo 19 Enterprise · Python, PostgreSQL, OWL",[
    "Worked on the production process for health supplements on Odoo 19: from R&amp;D samples, costing and quotation, to manufacturing orders, inventory, purchasing and quality control.",
    "Worked on the Costing Sheet: raw materials, consumables, primary and secondary packaging for each pack size, general manufacturing cost, profit and VAT; multi-level approval (technical, sales, final approver), then creating the quotation and exporting to Excel.",
    "Worked on the R&amp;D flow: managing sample rounds, test samples and documents, linked to the Costing Sheet.",
@@ -183,8 +182,7 @@ EN = dict(
   ("E-learning","Mate JSC · 4 months · 9 members (1 PM, 2 BA, 2 QA, 4 Dev)"),
   ("Electronic Medical Records &amp; Hospital Management","Freelancer · 03/2025 - 07/2025 · 6 members (1 PM, 5 Dev)"),
   ("Viindoo Product Upgrade","11/2022 - 07/2023 · 21 members (2 PM, 8 QA, 11 Dev)")],
- edu=[("Major: Information Technology","FPT Polytechnic College","08/2018 - 06/2021 · GPA 3.3"),
-      ("Major: Information Technology","Hanoi Open University","03/2024 - Present")],
+ edu=[("Major: Information Technology","Hanoi Open University","GPA 3.6")],
  out="LuuQuangHuy_CV_EN.pdf")
 
 def render(d):
