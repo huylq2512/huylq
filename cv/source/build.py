@@ -111,7 +111,7 @@ VI = dict(
   ("E-learning","Mate JSC · 4 tháng · 9 thành viên (1 PM, 2 BA, 2 QA, 4 Dev)"),
   ("Hồ sơ bệnh án điện tử và quản lý bệnh viện","Freelancer · 03/2025 - 07/2025 · 6 thành viên (1 PM, 5 Dev)"),
   ("Nâng cấp sản phẩm Viindoo","11/2022 - 07/2023 · 21 thành viên (2 PM, 8 QA, 11 Dev)")],
- edu=[("Chuyên ngành Công nghệ thông tin","Trường Đại học Mở Hà Nội","GPA 3.6")],
+ edu=[("Chuyên ngành Công nghệ thông tin","Trường Đại học Mở Hà Nội","GPA 3.5")],
  out="LuuQuangHuy_CV_VI.pdf")
 
 EN = dict(
@@ -181,7 +181,7 @@ EN = dict(
   ("E-learning","Mate JSC · 4 months · 9 members (1 PM, 2 BA, 2 QA, 4 Dev)"),
   ("Electronic Medical Records &amp; Hospital Management","Freelancer · 03/2025 - 07/2025 · 6 members (1 PM, 5 Dev)"),
   ("Viindoo Product Upgrade","11/2022 - 07/2023 · 21 members (2 PM, 8 QA, 11 Dev)")],
- edu=[("Major: Information Technology","Hanoi Open University","GPA 3.6")],
+ edu=[("Major: Information Technology","Hanoi Open University","GPA 3.5")],
  out="LuuQuangHuy_CV_EN.pdf")
 
 def render(d):
