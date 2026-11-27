@@ -47,7 +47,7 @@ def projs(items):
 VI = dict(
  lang="vi", contact_loc="Ngã Ba Kim - Mù Cang Chải - Lào Cai", title="Software Engineer",
  h_sum="Tóm tắt", h_skill="Kỹ năng", h_exp="Kinh nghiệm làm việc", h_proj="Dự án tiêu biểu", h_edu="Học vấn",
- summary="Lập trình viên Odoo và Python với hơn 4 năm kinh nghiệm phát triển, tùy chỉnh hệ thống ERP trên các phiên bản 15.0–19.0. Có kinh nghiệm xây dựng công cụ tự động hóa bằng Python: xử lý dữ liệu và xuất báo cáo, bot giám sát hệ thống và cảnh báo công việc, chương trình kiểm thử cho các công ty sản xuất. Có kinh nghiệm làm việc với nhiều nghiệp vụ như CRM, Bán hàng, Kế toán, Nhân sự, Kho, Mua hàng và Thương mại điện tử. Bên cạnh chuyên môn lập trình hiện đã và đang đảm nhiệm vai trò Team Lead, phối hợp cùng các thành viên và điều phối công việc để đáp ứng yêu cầu dự án.",
+ summary="Lập trình viên Odoo và Python với hơn 4 năm kinh nghiệm phát triển, tùy chỉnh hệ thống ERP trên các phiên bản 15.0–19.0, trong đó có ERP quản lý sản xuất và kho cho công ty dược. Có kinh nghiệm xây dựng công cụ tự động hóa bằng Python: xử lý dữ liệu và xuất báo cáo, bot giám sát hệ thống và cảnh báo công việc, chương trình kiểm thử cho các công ty sản xuất. Có kinh nghiệm làm việc với nhiều nghiệp vụ như CRM, Bán hàng, Kế toán, Nhân sự, Kho, Mua hàng và Thương mại điện tử. Bên cạnh chuyên môn lập trình hiện đã và đang đảm nhiệm vai trò Team Lead, phối hợp cùng các thành viên và điều phối công việc để đáp ứng yêu cầu dự án.",
  exp=[
   ("Odoo &amp; Python Development · Team Lead","03/2026 - Hiện tại","Công ty Bắc Hà",[
    "Tham gia dự án AVB về bán hàng, kế toán và dự án Corp về bán hàng B2B, tích hợp Salesforce.",
@@ -86,10 +86,6 @@ VI = dict(
    "Xây dựng bộ lọc phân loại mức ưu tiên để nhận diện lỗi bất thường, tiến độ review code đình trệ và đầu việc sắp quá hạn.",
    "Tích hợp Webhooks và Telegram API để đẩy cảnh báo tức thời kèm báo cáo tóm tắt cuối ngày về nhóm chat của team.",
    "Kết quả: đội kỹ thuật phát hiện và xử lý sự cố sớm hơn 50%, tiết kiệm thời gian kiểm tra thủ công mỗi ngày."]),
-  ("Corp - Bán hàng B2B và tích hợp Salesforce","Bắc Hà · Team Lead",[
-   "Phát triển hệ thống bán hàng B2B trên Odoo, tích hợp Salesforce để đồng bộ dữ liệu khách hàng và hoạt động kinh doanh.",
-   "Tùy chỉnh quy trình báo giá, đơn bán và chính sách giá cho khách hàng doanh nghiệp.",
-   "Phát triển API tích hợp Odoo – Salesforce, xử lý ánh xạ, đồng bộ dữ liệu và ghi nhận lỗi."]),
   ("Quản lý sản xuất và kho cho công ty dược","Bắc Hà · Odoo 19 Enterprise · Python, PostgreSQL, OWL",[
    "Thực hiện quy trình sản xuất thực phẩm bảo vệ sức khỏe trên Odoo 19: từ nghiên cứu phát triển mẫu (R&amp;D), tính giá thành và báo giá, đến lệnh sản xuất, kho, mua hàng và kiểm soát chất lượng.",
    "Thực hiện phiếu tính giá thành (Costing Sheet): nhập nguyên liệu, vật tư tiêu hao, bao bì cấp 1 và 2 theo từng quy cách đóng gói, chi phí sản xuất chung, lợi nhuận và VAT; duyệt nhiều cấp (chuyên môn, kinh doanh, người duyệt cuối) rồi tạo báo giá và xuất Excel.",
@@ -97,6 +93,10 @@ VI = dict(
    "Thực hiện luồng sản xuất và kho: tách lệnh sản xuất vẫn giữ lô; chuyển nguyên liệu từ các kho theo nhóm về kho nguyên liệu sản xuất; gom đơn mua nguyên liệu, bao bì theo nhà cung cấp từ các lệnh sản xuất cùng một đơn bán.",
    "Thực hiện luồng chất lượng: bắt buộc COA và hạn sử dụng theo lô khi nhập kho, lưu phiếu kiểm nghiệm ở bước QC, tự chuyển hàng dễ cháy về vị trí kho an toàn sau khi QC đạt.",
    "Thực hiện in hồ sơ lô sản xuất (4 tài liệu Word, tải ZIP nhiều lệnh), mã vạch lô theo SKU/LOT và dashboard vận hành; nghiệm thu theo yêu cầu nghiệp vụ và sửa lỗi."]),
+  ("Corp - Bán hàng B2B và tích hợp Salesforce","Bắc Hà · Team Lead",[
+   "Phát triển hệ thống bán hàng B2B trên Odoo, tích hợp Salesforce để đồng bộ dữ liệu khách hàng và hoạt động kinh doanh.",
+   "Tùy chỉnh quy trình báo giá, đơn bán và chính sách giá cho khách hàng doanh nghiệp.",
+   "Phát triển API tích hợp Odoo – Salesforce, xử lý ánh xạ, đồng bộ dữ liệu và ghi nhận lỗi."]),
   ("ERP Tân Phát","Mate JSC · Team Lead · 11 tháng · 6 thành viên (1 PM, 1 Team Lead, 3 Dev, 1 BA)",[
    "Triển khai ERP cho Công ty Tân Phát (bán hàng, thương mại điện tử): Mua hàng, Bán hàng, Loyalty, Website, CRM.",
    "Nhận yêu cầu từ PM, lập kế hoạch, phân công nhiệm vụ và review giải pháp, mã nguồn."]),
@@ -117,7 +117,7 @@ VI = dict(
 EN = dict(
  lang="en", contact_loc="Nga Ba Kim - Mu Cang Chai - Lao Cai", title="Software Engineer",
  h_sum="Summary", h_skill="Skills", h_exp="Work Experience", h_proj="Key Projects", h_edu="Education",
- summary="Odoo and Python developer with over 4 years of experience building and customizing ERP systems on Odoo 15.0–19.0. Built Python tools for data processing and reports, a bot that monitors systems and tasks, and test programs for manufacturing companies. Worked on many business areas: CRM, Sales, Accounting, HR, Inventory, Purchase and E-commerce. Also works as a Team Lead, working with team members and organizing tasks to meet project needs.",
+ summary="Odoo and Python developer with over 4 years of experience building and customizing ERP systems on Odoo 15.0–19.0, including an ERP for manufacturing and warehouse management at a pharmaceutical company. Built Python tools for data processing and reports, a bot that monitors systems and tasks, and test programs for manufacturing companies. Worked on many business areas: CRM, Sales, Accounting, HR, Inventory, Purchase and E-commerce. Also works as a Team Lead, working with team members and organizing tasks to meet project needs.",
  exp=[
   ("Odoo &amp; Python Development · Team Lead","03/2026 - Present","Bac Ha Company",[
    "Worked on the AVB project (sales and accounting) and the Corp project (B2B sales with Salesforce integration).",
@@ -156,10 +156,6 @@ EN = dict(
    "Built a priority filter to flag unusual errors, stuck code reviews and tasks close to their deadline.",
    "Used Webhooks and the Telegram API to send alerts and an end-of-day summary to the team chat.",
    "Result: the team found and fixed incidents 50% sooner and saved time on daily manual checks."]),
-  ("Corp - B2B Sales &amp; Salesforce Integration","Bac Ha · Team Lead",[
-   "Built a B2B sales management system on Odoo integrated with Salesforce to sync customer and business data.",
-   "Customized quotation, sales order and pricing flows for business customers.",
-   "Built the Odoo – Salesforce API for data mapping, syncing and error logging."]),
   ("Manufacturing &amp; Warehouse Management for a Pharmaceutical Company","Bac Ha · Odoo 19 Enterprise · Python, PostgreSQL, OWL",[
    "Worked on the production process for health supplements on Odoo 19: from R&amp;D samples, costing and quotation, to manufacturing orders, inventory, purchasing and quality control.",
    "Worked on the Costing Sheet: raw materials, consumables, primary and secondary packaging for each pack size, general manufacturing cost, profit and VAT; multi-level approval (technical, sales, final approver), then creating the quotation and exporting to Excel.",
@@ -167,6 +163,10 @@ EN = dict(
    "Worked on the manufacturing and inventory flow: splitting manufacturing orders while keeping lots; moving materials from category warehouses to the manufacturing material warehouse; consolidating purchase orders for materials and packaging per vendor from manufacturing orders of the same sales order.",
    "Worked on the quality flow: required COA and expiry date per lot at goods receipt, stored the inspection report at the QC step, and automatically moved flammable goods to a fire-safe location after QC pass.",
    "Worked on batch record printing (4 Word documents, ZIP download for many orders), lot barcodes by SKU/LOT and an operations dashboard; handled acceptance against business requirements and fixes."]),
+  ("Corp - B2B Sales &amp; Salesforce Integration","Bac Ha · Team Lead",[
+   "Built a B2B sales management system on Odoo integrated with Salesforce to sync customer and business data.",
+   "Customized quotation, sales order and pricing flows for business customers.",
+   "Built the Odoo – Salesforce API for data mapping, syncing and error logging."]),
   ("Tan Phat ERP","Mate JSC · Team Lead · 11 months · 6 members (1 PM, 1 Team Lead, 3 Dev, 1 BA)",[
    "Delivered an ERP for Tan Phat Company (sales and e-commerce): Purchase, Sales, Loyalty, Website and CRM.",
    "Got requirements from the PM, planned and assigned tasks, and reviewed solutions and code."]),
