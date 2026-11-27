@@ -25,9 +25,9 @@ h2{font-family:'Merriweather',serif;font-size:10.3pt;letter-spacing:.3px;text-tr
 ul{margin:0;padding-left:15px}
 li{margin:1.5px 0}
 .role{font-style:italic;font-size:8.4pt;color:#555;margin-bottom:6px}
-.proj{margin-bottom:5px;break-inside:avoid-page}
+.proj{margin-bottom:5px}.proj li{break-inside:avoid}
 .proj.first{border-left:2.5px solid #c8d2e0;padding-left:12px;margin-left:8px}
-.pt{font-weight:700;color:#14284a}
+.pt{font-weight:700;color:#14284a;break-after:avoid}
 .pt span{font-weight:400;color:#444;font-size:8.6pt}
 .edu b{color:#14284a}
 .edus{display:flex;gap:40px}.edus .edu{flex:1}
@@ -52,9 +52,9 @@ VI = dict(
  exp=[
   ("Odoo Development · Team Lead","03/2026 - Hiện tại","Công ty Bắc Hà",[
    "Tham gia dự án AVB về bán hàng, kế toán và dự án Corp về bán hàng B2B, tích hợp Salesforce.",
-   "Đảm nhiệm vai trò Team Lead, dẫn dắt nhóm phát triển nhỏ cho hai dự án AVB và Corp.",
+   "Đảm nhiệm vai trò Team Lead cho hai dự án AVB và Corp.",
    "Thực hiện dự án quản lý sản xuất và kho cho công ty dược (Odoo 19 Enterprise), trong đó có phiếu tính giá thành (Costing Sheet).",
-   "Xây dựng từ xa chương trình kiểm thử cho khách hàng sản xuất bo mạch điện tử: phân tích Test Specification, cấu hình Test Station và Test Sequence, thực hiện GR&R và xây dựng công cụ tính GR&R, theo dõi CPK/FPY/UPH, xác nhận PVT; viết logic trước khi có thiết bị thật và bàn giao cho IT phía khách hàng triển khai thực tế.",
+   "Xây dựng từ xa chương trình kiểm thử cho khách hàng sản xuất bo mạch điện tử: phân tích Test Specification, cấu hình Test Station và Test Sequence, thực hiện GR&R và xây dựng công cụ tính GR&R, theo dõi CPK/FPY/UPH, xác nhận PVT.",
    "Xây dựng công cụ CLI bằng Python (Pandas, OpenPyXL, Schedule) tự động gom, chuẩn hóa và đối soát số liệu từ 15–20 file, xuất báo cáo Excel; rút thời gian xử lý hằng ngày từ hơn 1 tiếng xuống dưới 30 giây.",
    "Xây dựng bot Python (Cronjob, Redmine, Webhooks, Telegram) giám sát log, dịch vụ và tiến độ công việc, gửi cảnh báo tức thời; giúp phát hiện sự cố sớm hơn 50%."]),
   ("Odoo Development","08/2023 - 03/2026","Công ty Cổ phần Công nghệ Mate JSC",[
@@ -68,7 +68,7 @@ VI = dict(
  role="Vai trò: Python Developer tại các dự án công cụ và tự động hóa; Odoo Development, Team Lead tại Corp và ERP Tân Phát.",
  proj=[
   ("Chương trình kiểm thử bo mạch điện tử (ECB-100)","6 tháng · Python, Excel",[
-   "Xây dựng từ xa chương trình kiểm thử cho model bo mạch điện tử (ECB-100) bằng Python, từ Test Specification đến xác nhận PVT; do chưa có thiết bị thật nên viết logic trước, kiểm chứng bằng thiết bị và board mô phỏng, rồi bàn giao cho IT phía khách hàng để triển khai thực tế.",
+   "Xây dựng từ xa chương trình kiểm thử cho model bo mạch điện tử (ECB-100) bằng Python, từ Test Specification đến xác nhận PVT; kiểm chứng bằng thiết bị và board mô phỏng.",
    "Phân tích Test Specification, xác định 8 Test Item, Test Point và tiêu chuẩn PASS/FAIL (giới hạn LSL/USL, hỗ trợ giới hạn một phía) lưu trong file cấu hình dùng chung.",
    "Xây dựng Test Station: lớp driver cho DMM, bộ đếm tần số, oscilloscope và Test Fixture/Jig (kiểm tra tiếp xúc, mô phỏng sai số kẹp); thiết kế sẵn giao diện để thay bằng thiết bị thật.",
    "Xây dựng Test Sequence với Test Limits và Test Parameters; tự thử lại khi tiếp xúc xấu hoặc thiết bị lỗi, ghi log debug phục vụ Troubleshooting.",
@@ -87,9 +87,9 @@ VI = dict(
    "Xây dựng bộ lọc phân loại mức ưu tiên để nhận diện lỗi bất thường, tiến độ review code đình trệ và đầu việc sắp quá hạn.",
    "Tích hợp Webhooks và Telegram API để đẩy cảnh báo tức thời kèm báo cáo tóm tắt cuối ngày về nhóm chat của team.",
    "Kết quả: đội kỹ thuật phát hiện và xử lý sự cố sớm hơn 50%, tiết kiệm thời gian kiểm tra thủ công mỗi ngày."]),
-  ("Corp - Bán hàng B2B và tích hợp Salesforce","Bắc Hà · Team Lead · Nhóm phát triển nhỏ",[
+  ("Corp - Bán hàng B2B và tích hợp Salesforce","Bắc Hà · Team Lead",[
    "Phát triển hệ thống bán hàng B2B trên Odoo, tích hợp Salesforce để đồng bộ dữ liệu khách hàng và hoạt động kinh doanh.",
-   "Dẫn dắt nhóm phát triển nhỏ; tùy chỉnh quy trình báo giá, đơn bán và chính sách giá cho khách hàng doanh nghiệp.",
+   "Tùy chỉnh quy trình báo giá, đơn bán và chính sách giá cho khách hàng doanh nghiệp.",
    "Phát triển API tích hợp Odoo – Salesforce, xử lý ánh xạ, đồng bộ dữ liệu và ghi nhận lỗi."]),
   ("Quản lý sản xuất và kho cho công ty dược (Dược Kim Bảng)","Bắc Hà · Odoo 19 Enterprise · Python, PostgreSQL, OWL",[
    "Thực hiện hệ thống quản lý sản xuất, giá thành và kho cho công ty dược trên Odoo 19.",
@@ -104,7 +104,7 @@ VI = dict(
    "Phát triển Plugin kết nối USB Token, ký số XML bằng chứng thư số; tham gia Code Review."])],
  h_other="Dự án khác",
  other=[
-  ("AVB - Quản lý bán hàng và kế toán","Bắc Hà · Team Lead · Nhóm phát triển nhỏ"),
+  ("AVB - Quản lý bán hàng và kế toán","Bắc Hà · Team Lead"),
   ("Quỹ Trò Nghèo Vùng Cao","Mate JSC · 4 tháng · 5 thành viên (1 PM, 1 BA, 1 QA, 2 Dev)"),
   ("E-learning","Mate JSC · 4 tháng · 9 thành viên (1 PM, 2 BA, 2 QA, 4 Dev)"),
   ("Hồ sơ bệnh án điện tử và quản lý bệnh viện","Freelancer · 03/2025 - 07/2025 · 6 thành viên (1 PM, 5 Dev)"),
@@ -120,9 +120,9 @@ EN = dict(
  exp=[
   ("Odoo Development · Team Lead","03/2026 - Present","Bac Ha Company",[
    "Worked on the AVB project (sales and accounting) and the Corp project (B2B sales with Salesforce integration).",
-   "Served as Team Lead of a small development team for both AVB and Corp.",
+   "Served as Team Lead for both AVB and Corp.",
    "Worked on a manufacturing and warehouse project for a pharmaceutical company (Odoo 19 Enterprise), including the Costing Sheet.",
-   "Built a test program remotely for a client that makes electronic control boards: read the Test Specification, set up the Test Station and Test Sequence, did GR&amp;R and built a GR&amp;R calculation tool, tracked CPK/FPY/UPH and checked PVT. Wrote the logic first because real equipment was not available, then handed it to the client's IT team to deploy.",
+   "Built a test program remotely for a client that makes electronic control boards: read the Test Specification, set up the Test Station and Test Sequence, did GR&amp;R and built a GR&amp;R calculation tool, tracked CPK/FPY/UPH and checked PVT.",
    "Built a Python CLI tool (Pandas, OpenPyXL, Schedule) that collects, cleans and compares data from 15–20 files and exports Excel reports; cut daily work from over 1 hour to under 30 seconds.",
    "Built a Python bot (Cronjob, Redmine, Webhooks, Telegram) that checks logs, services and task progress and sends alerts right away; the team found problems 50% sooner."]),
   ("Odoo Development","08/2023 - 03/2026","Mate Technology JSC",[
@@ -136,7 +136,7 @@ EN = dict(
  role="Role: Python Developer on tooling and automation projects; Odoo Development, Team Lead on Corp and Tan Phat ERP.",
  proj=[
   ("Electronic Control Board Test Program (ECB-100)","6 months · Python, Excel",[
-   "Built a test program remotely for a new electronic control board (ECB-100) in Python, from Test Specification to PVT. No real equipment was available, so I wrote the logic first, tested it with simulated equipment and boards, and handed it to the client's IT team to deploy.",
+   "Built a test program remotely for a new electronic control board (ECB-100) in Python, from Test Specification to PVT. Tested it with simulated equipment and boards.",
    "Read the Test Specification and defined 8 Test Items, Test Points and PASS/FAIL limits (LSL/USL, one-sided limits supported) in a shared config file.",
    "Built the Test Station: drivers for DMM, frequency counter, oscilloscope and Test Fixture/Jig (contact check, clamping error); the interfaces can be replaced with real equipment.",
    "Built the Test Sequence with Test Limits and Test Parameters; it retries automatically on bad contact or instrument errors and writes debug logs.",
@@ -155,9 +155,9 @@ EN = dict(
    "Built a priority filter to flag unusual errors, stuck code reviews and tasks close to their deadline.",
    "Used Webhooks and the Telegram API to send alerts and an end-of-day summary to the team chat.",
    "Result: the team found and fixed incidents 50% sooner and saved time on daily manual checks."]),
-  ("Corp - B2B Sales &amp; Salesforce Integration","Bac Ha · Team Lead · Small development team",[
+  ("Corp - B2B Sales &amp; Salesforce Integration","Bac Ha · Team Lead",[
    "Built a B2B sales management system on Odoo integrated with Salesforce to sync customer and business data.",
-   "Led a small development team; customized quotation, sales order and pricing flows for business customers.",
+   "Customized quotation, sales order and pricing flows for business customers.",
    "Built the Odoo – Salesforce API for data mapping, syncing and error logging."]),
   ("Manufacturing &amp; Warehouse Management for a Pharmaceutical Company (Duoc Kim Bang)","Bac Ha · Odoo 19 Enterprise · Python, PostgreSQL, OWL",[
    "Worked on the manufacturing, costing and warehouse system for a pharmaceutical company on Odoo 19.",
@@ -172,7 +172,7 @@ EN = dict(
    "Built the USB Token plugin and XML signing with digital certificates; joined code reviews."])],
  h_other="Other Projects",
  other=[
-  ("AVB - Sales &amp; Accounting Management","Bac Ha · Team Lead · Small development team"),
+  ("AVB - Sales &amp; Accounting Management","Bac Ha · Team Lead"),
   ("Quy Tro Ngheo Vung Cao (charity fund)","Mate JSC · 4 months · 5 members (1 PM, 1 BA, 1 QA, 2 Dev)"),
   ("E-learning","Mate JSC · 4 months · 9 members (1 PM, 2 BA, 2 QA, 4 Dev)"),
   ("Electronic Medical Records &amp; Hospital Management","Freelancer · 03/2025 - 07/2025 · 6 members (1 PM, 5 Dev)"),
