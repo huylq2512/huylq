@@ -34,8 +34,7 @@
 - **T08 3V3 rail ripple** (%GRR 14.7%): increase averaging/sample count, shield and shorten the probe ground lead, re-check pogo-pin seating, then repeat the GR&R study.
 - Top failure contributor: **T04** (3 units). Verify with a failure analysis sample before changing limits.
 
-## Hand-over to MP
+## Deliverables
 
-- Test SOP: `docs/SOP_TEST_STATION.md`
 - Test specification: `config/test_spec.json`
 - Raw data: `output/results.csv`, `output/units.csv`; Excel report: `output/pvt_report.xlsx`

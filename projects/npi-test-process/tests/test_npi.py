@@ -94,3 +94,22 @@ def test_stop_on_fail_and_contact_failure():
     with TestStation(rng, contact_fault_rate=1.0, comm_error_rate=0.0) as st:  # jig always bad
         res = run_unit(spec, st, make_unit(spec, rng, "C1", 0.0))
         assert res.first_fail == "FIXTURE_CONTACT" and res.rows == []
+
+
+def test_grr_tool_reads_csv_and_flags_unbalanced(tmp_path):
+    from npi_test.grr_tool import analyse_file
+
+    rng = random.Random(3)
+    rows = ["item,part,operator,value"]
+    for p in range(6):
+        for o in "ABC":
+            for _ in range(3):
+                rows.append(f"V1,P{p},{o},{p + rng.gauss(0, 0.02):.4f}")
+    f = tmp_path / "m.csv"
+    f.write_text("\n".join(rows))
+    (item, g, verdict), = analyse_file(f, tolerance=10.0)
+    assert item == "V1" and verdict == "PASS" and g.pct_grr < 10
+
+    f.write_text("\n".join(rows[:-1]))
+    with pytest.raises(ValueError, match="balanced"):
+        analyse_file(f)

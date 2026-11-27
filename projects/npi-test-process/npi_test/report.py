@@ -192,8 +192,8 @@ def write_pvt_markdown(path: Path, spec: Spec, a: dict) -> None:
         top = a["pareto"][0]
         L.append(f"- Top failure contributor: **{top[0]}** ({top[1]} units). Verify with a failure analysis "
                  "sample before changing limits.")
-    L += ["", "## Hand-over to MP", "",
-          "- Test SOP: `docs/SOP_TEST_STATION.md`", "- Test specification: `config/test_spec.json`",
+    L += ["", "## Deliverables", "",
+          "- Test specification: `config/test_spec.json`",
           "- Raw data: `output/results.csv`, `output/units.csv`; Excel report: `output/pvt_report.xlsx`", ""]
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(L), encoding="utf-8")

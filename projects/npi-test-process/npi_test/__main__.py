@@ -1,9 +1,10 @@
-"""CLI: python -m npi_test {run,report,all}"""
+"""CLI: python -m npi_test {run,report,all,grr}"""
 from __future__ import annotations
 
 import argparse
 from pathlib import Path
 
+from .grr_tool import analyse_file, format_results
 from .report import write_excel, write_pvt_markdown
 from .spec import load_spec
 from .workflow import analyse, load_results, run_grr_study, run_production, setup_logging
@@ -12,18 +13,31 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(prog="npi_test", description="NPI test process toolkit (simulated station)")
-    ap.add_argument("command", choices=["run", "report", "all"],
-                    help="run = test units, report = analyse + Excel/Markdown, all = both")
+    ap = argparse.ArgumentParser(prog="npi_test", description="Production test toolkit (simulated station)")
+    ap.add_argument("command", choices=["run", "report", "all", "grr"],
+                    help="run = test units, report = analyse + Excel/Markdown, all = both, "
+                         "grr = GR&R from a measurement CSV (--input)")
     ap.add_argument("--spec", type=Path, default=ROOT / "config" / "test_spec.json")
     ap.add_argument("--out", type=Path, default=ROOT / "output")
     ap.add_argument("--units", type=int, default=300)
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--defect-rate", type=float, default=0.015)
+    ap.add_argument("--input", type=Path, help="grr: CSV with part, operator, value[, item]")
+    ap.add_argument("--tolerance", type=float, default=0.0,
+                    help="grr: total tolerance when the CSV has no item matching --spec")
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args()
 
     spec = load_spec(args.spec)
+    if args.command == "grr":
+        if args.input is None:
+            ap.error("grr needs --input <csv>")
+        try:
+            print(format_results(analyse_file(args.input, args.tolerance, spec)))
+        except (OSError, ValueError) as e:
+            ap.error(str(e))
+        return
+
     setup_logging(args.out, args.verbose)
 
     if args.command in ("run", "all"):

@@ -1,7 +1,7 @@
-# NPI Test Process Development - Electronic Control Board
+# Production Test Program - Electronic Control Board
 
-Practice project (6 months): develop and validate the production test process for a new electronic
-control board (ECB-100), from Test Specification to PVT validation and MP hand-over.
+Practice project (6 months): test program for a manufacturer's electronic control board (ECB-100),
+from Test Specification to PVT validation.
 
 > **Important:** the station runs on a *simulator* (synthetic boards, simulated instruments and
 > cycle time). The statistics, sequence logic and reports are real code; the measurements are not
@@ -17,8 +17,8 @@ control board (ECB-100), from Test Specification to PVT validation and MP hand-o
 | Test Sequence, limits, retry, debug/troubleshooting log | `npi_test/sequence.py`, `output/station.log` |
 | Data processing + automated Excel report (Python/Excel) | `npi_test/report.py`, `output/pvt_report.xlsx` |
 | GR&R (crossed ANOVA), Cpk, FPY, UPH, failure Pareto | `npi_test/stats.py`, `npi_test/workflow.py` |
+| Standalone GR&R calculator for any measurement CSV | `npi_test/grr_tool.py` |
 | PVT validation, improvement proposals | `docs/PVT_VALIDATION.md` (generated) |
-| Test SOP, hand-over to MP | `docs/SOP_TEST_STATION.md` |
 
 ## Run
 
@@ -26,6 +26,7 @@ control board (ECB-100), from Test Specification to PVT validation and MP hand-o
 pip install -r requirements.txt
 python -m npi_test all            # test 300 units + GR&R study + reports
 python -m npi_test all --units 500 --seed 7 -v
+python -m npi_test grr --input data.csv   # GR&R from your own measurements (part, operator, value[, item])
 python -m pytest -q               # unit tests
 ```
 
@@ -49,8 +50,8 @@ Outputs: `output/results.csv`, `output/units.csv`, `output/station.log`, `output
 
 ```
 config/test_spec.json      limits + PVT criteria
-npi_test/                  spec, instruments, sequence, simulator, stats, workflow, report, CLI
+npi_test/                  spec, instruments, sequence, simulator, stats, grr_tool, workflow, report, CLI
 tests/test_npi.py          unit tests (limits, Cpk, FPY/UPH/Pareto, GR&R, sequence, contact retry)
-docs/                      SOP and generated PVT validation
+docs/                      generated PVT validation
 output/                    generated data and reports
 ```
