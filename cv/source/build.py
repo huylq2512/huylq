@@ -1,5 +1,5 @@
 """Build the VI/EN CV PDFs: python3 build.py (needs google-chrome)."""
-import html, subprocess, pathlib
+import html, shutil, subprocess, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 OUT = HERE.parent
@@ -202,3 +202,4 @@ def render(d):
                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 for d in (VI, EN): render(d)
+shutil.copy(OUT / EN['out'], OUT / 'LuuQuangHuy-SoftwareEngineering.pdf')
