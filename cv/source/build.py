@@ -47,7 +47,7 @@ def projs(items):
 VI = dict(
  lang="vi", contact_loc="Ngã Ba Kim - Mù Cang Chải - Lào Cai", title="Software Engineer",
  h_sum="Tóm tắt", h_skill="Kỹ năng", h_exp="Kinh nghiệm làm việc", h_proj="Dự án tiêu biểu", h_edu="Học vấn",
- summary="Lập trình viên Odoo và Python với hơn 4 năm kinh nghiệm phát triển, tùy chỉnh hệ thống ERP trên các phiên bản 15.0–19.0, trong đó có ERP quản lý sản xuất và kho cho công ty dược. Có kinh nghiệm xây dựng công cụ tự động hóa bằng Python: xử lý dữ liệu và xuất báo cáo, bot giám sát hệ thống và cảnh báo công việc, chương trình kiểm thử cho các công ty sản xuất. Có kinh nghiệm làm việc với nhiều nghiệp vụ như CRM, Bán hàng, Kế toán, Nhân sự, Kho, Mua hàng và Thương mại điện tử. Bên cạnh chuyên môn lập trình hiện đã và đang đảm nhiệm vai trò Team Lead, phối hợp cùng các thành viên và điều phối công việc để đáp ứng yêu cầu dự án.",
+ summary="Lập trình viên Odoo và Python với hơn 4 năm kinh nghiệm phát triển, tùy chỉnh hệ thống ERP trên các phiên bản 15.0–19.0. Có kinh nghiệm xây dựng công cụ tự động hóa bằng Python: xử lý dữ liệu và xuất báo cáo, bot giám sát hệ thống và cảnh báo công việc, chương trình kiểm thử cho các công ty sản xuất. Có kinh nghiệm làm việc với nhiều nghiệp vụ như CRM, Bán hàng, Kế toán, Nhân sự, Sản xuất, Kho, Mua hàng, Kiểm soát chất lượng và Thương mại điện tử. Bên cạnh chuyên môn lập trình hiện đã và đang đảm nhiệm vai trò Team Lead, phối hợp cùng các thành viên và điều phối công việc để đáp ứng yêu cầu dự án.",
  exp=[
   ("Odoo &amp; Python Development · Team Lead","03/2026 - Hiện tại","Công ty Bắc Hà",[
    "Tham gia dự án AVB về bán hàng, kế toán và dự án Corp về bán hàng B2B, tích hợp Salesforce.",
@@ -117,7 +117,7 @@ VI = dict(
 EN = dict(
  lang="en", contact_loc="Nga Ba Kim - Mu Cang Chai - Lao Cai", title="Software Engineer",
  h_sum="Summary", h_skill="Skills", h_exp="Work Experience", h_proj="Key Projects", h_edu="Education",
- summary="Odoo and Python developer with over 4 years of experience building and customizing ERP systems on Odoo 15.0–19.0, including an ERP for manufacturing and warehouse management at a pharmaceutical company. Built Python tools for data processing and reports, a bot that monitors systems and tasks, and test programs for manufacturing companies. Worked on many business areas: CRM, Sales, Accounting, HR, Inventory, Purchase and E-commerce. Also works as a Team Lead, working with team members and organizing tasks to meet project needs.",
+ summary="Odoo and Python developer with over 4 years of experience building and customizing ERP systems on Odoo 15.0–19.0. Built Python tools for data processing and reports, a bot that monitors systems and tasks, and test programs for manufacturing companies. Worked on many business areas: CRM, Sales, Accounting, HR, Manufacturing, Inventory, Purchase, Quality Control and E-commerce. Also works as a Team Lead, working with team members and organizing tasks to meet project needs.",
  exp=[
   ("Odoo &amp; Python Development · Team Lead","03/2026 - Present","Bac Ha Company",[
    "Worked on the AVB project (sales and accounting) and the Corp project (B2B sales with Salesforce integration).",
