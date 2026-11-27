@@ -49,7 +49,7 @@ VI = dict(
   ("Odoo Development · Team Lead","03/2026 - Hiện tại","Công ty Bắc Hà",[
    "Tham gia dự án AVB về bán hàng, kế toán và dự án Corp về bán hàng B2B, tích hợp Salesforce.",
    "Đảm nhiệm vai trò Team Lead, dẫn dắt nhóm phát triển nhỏ cho hai dự án AVB và Corp.",
-   "Xây dựng chương trình kiểm thử cho công ty sản xuất bo mạch điện tử: phân tích Test Specification, cấu hình Test Station và Test Sequence, thực hiện GR&R và xây dựng công cụ tính GR&R, theo dõi CPK/FPY/UPH, xác nhận PVT.",
+   "Xây dựng từ xa chương trình kiểm thử cho khách hàng sản xuất bo mạch điện tử: phân tích Test Specification, cấu hình Test Station và Test Sequence, thực hiện GR&R và xây dựng công cụ tính GR&R, theo dõi CPK/FPY/UPH, xác nhận PVT; viết logic trước khi có thiết bị thật và bàn giao cho IT phía khách hàng triển khai thực tế.",
    "Xây dựng công cụ CLI bằng Python (Pandas, OpenPyXL, Schedule) tự động gom, chuẩn hóa và đối soát số liệu từ 15–20 file, xuất báo cáo Excel; rút thời gian xử lý hằng ngày từ hơn 1 tiếng xuống dưới 30 giây.",
    "Xây dựng bot Python (Cronjob, Redmine, Webhooks, Telegram) giám sát log, dịch vụ và tiến độ công việc, gửi cảnh báo tức thời; giúp phát hiện sự cố sớm hơn 50%."]),
   ("Odoo Development","08/2023 - 03/2026","Công ty Cổ phần Công nghệ Mate JSC",[
@@ -61,7 +61,7 @@ VI = dict(
  role="Vai trò: Python Developer tại các dự án công cụ và tự động hóa; Odoo Development, Team Lead tại Corp và ERP Tân Phát.",
  proj=[
   ("Chương trình kiểm thử bo mạch điện tử (ECB-100)","6 tháng · Python, Excel",[
-   "Xây dựng chương trình kiểm thử cho model bo mạch điện tử (ECB-100) bằng Python, từ Test Specification đến xác nhận PVT; dùng thiết bị và board mô phỏng để chạy toàn bộ quy trình.",
+   "Xây dựng từ xa chương trình kiểm thử cho model bo mạch điện tử (ECB-100) bằng Python, từ Test Specification đến xác nhận PVT; do chưa có thiết bị thật nên viết logic trước, kiểm chứng bằng thiết bị và board mô phỏng, rồi bàn giao cho IT phía khách hàng để triển khai thực tế.",
    "Phân tích Test Specification, xác định 8 Test Item, Test Point và tiêu chuẩn PASS/FAIL (giới hạn LSL/USL, hỗ trợ giới hạn một phía) lưu trong file cấu hình dùng chung.",
    "Xây dựng Test Station: lớp driver cho DMM, bộ đếm tần số, oscilloscope và Test Fixture/Jig (kiểm tra tiếp xúc, mô phỏng sai số kẹp); thiết kế sẵn giao diện để thay bằng thiết bị thật.",
    "Xây dựng Test Sequence với Test Limits và Test Parameters; tự thử lại khi tiếp xúc xấu hoặc thiết bị lỗi, ghi log debug phục vụ Troubleshooting.",
@@ -97,53 +97,53 @@ VI = dict(
 EN = dict(
  lang="en", contact_loc="Nga Ba Kim - Mu Cang Chai - Lao Cai", title="Software Engineer",
  h_sum="Summary", h_skill="Skills", h_exp="Work Experience", h_proj="Key Projects", h_edu="Education",
- summary="Odoo and Python developer with over 4 years of experience building and customizing ERP systems on Odoo 15.0–19.0. Experienced in building Python automation tools: data processing and report generation, system monitoring and task alert bots, and test programs for manufacturing companies. Experienced across business domains including CRM, Sales, Accounting, HR, Inventory, Purchase and E-commerce. Beyond development, currently works as a Team Lead, collaborating with team members and coordinating work to meet project requirements.",
+ summary="Odoo and Python developer with over 4 years of experience building and customizing ERP systems on Odoo 15.0–19.0. Built Python tools for data processing and reports, a bot that monitors systems and tasks, and test programs for manufacturing companies. Worked on many business areas: CRM, Sales, Accounting, HR, Inventory, Purchase and E-commerce. Also works as a Team Lead, working with team members and organizing tasks to meet project needs.",
  exp=[
   ("Odoo Development · Team Lead","03/2026 - Present","Bac Ha Company",[
    "Worked on the AVB project (sales and accounting) and the Corp project (B2B sales with Salesforce integration).",
    "Served as Team Lead of a small development team for both AVB and Corp.",
-   "Built a test program for a manufacturer of electronic control boards: analyzed the Test Specification, configured the Test Station and Test Sequence, ran GR&amp;R and built a GR&amp;R calculation tool, tracked CPK/FPY/UPH and validated the process at PVT.",
-   "Built a Python CLI tool (Pandas, OpenPyXL, Schedule) that automatically collects, normalizes and reconciles data from 15–20 files and exports Excel reports; cut daily processing time from over 1 hour to under 30 seconds.",
-   "Built a Python bot (Cronjob, Redmine, Webhooks, Telegram) that monitors logs, services and task progress and sends instant alerts; helped the team detect incidents 50% sooner."]),
+   "Built a test program remotely for a client that makes electronic control boards: read the Test Specification, set up the Test Station and Test Sequence, did GR&amp;R and built a GR&amp;R calculation tool, tracked CPK/FPY/UPH and checked PVT. Wrote the logic first because real equipment was not available, then handed it to the client's IT team to deploy.",
+   "Built a Python CLI tool (Pandas, OpenPyXL, Schedule) that collects, cleans and compares data from 15–20 files and exports Excel reports; cut daily work from over 1 hour to under 30 seconds.",
+   "Built a Python bot (Cronjob, Redmine, Webhooks, Telegram) that checks logs, services and task progress and sends alerts right away; the team found problems 50% sooner."]),
   ("Odoo Development","08/2023 - 03/2026","Mate Technology JSC",[
    "Developed the Tan Phat ERP, E-Contract, Quy Tro Ngheo Vung Cao (charity fund) and E-learning projects.",
-   "Worked with BAs on business analysis; customized modules, built OWL interfaces, integrated APIs, tested and supported operations."]),
+   "Worked with BAs to understand requirements; customized modules, built OWL screens, connected APIs, tested and supported operations."]),
   ("Odoo Development","11/2022 - 07/2023","Viindoo Technology JSC",[
-   "Upgraded the product from Odoo 14 to 15, optimized performance and adjusted features to business requirements.",
-   "Took part in Staging / Production deployments; maintained technical documentation and change logs."])],
+   "Upgraded the product from Odoo 14 to 15, improved performance and changed features to fit business needs.",
+   "Helped deploy to Staging / Production; updated technical documents and change logs."])],
  role="Role: Python Developer on tooling and automation projects; Odoo Development, Team Lead on Corp and Tan Phat ERP.",
  proj=[
   ("Electronic Control Board Test Program (ECB-100)","6 months · Python, Excel",[
-   "Built a test program for a new electronic control board (ECB-100) in Python, from Test Specification through PVT validation, using simulated equipment and boards to run the full flow.",
-   "Analyzed the Test Specification and defined 8 Test Items, Test Points and PASS/FAIL criteria (LSL/USL, one-sided limits supported) kept in a shared config file.",
-   "Built the Test Station: drivers for DMM, frequency counter, oscilloscope and Test Fixture/Jig (contact check, clamping-error simulation); interfaces designed to be swapped for real equipment.",
-   "Built the Test Sequence with Test Limits and Test Parameters; automatic retry on bad contact or instrument errors, with debug logs for troubleshooting.",
-   "Used Python and openpyxl to process test data, analyze Test Failures with Pareto charts and auto-generate Excel reports (Summary, Cpk, Pareto, GR&amp;R, raw data).",
-   "Built a GR&amp;R calculation tool (ANOVA, 10 boards × 3 operators × 3 replicates) to assess repeatability and reproducibility; found the 3V3 ripple item at conditional GR&amp;R level and proposed measurement improvements.",
-   "Tracked CPK, FPY and UPH against PVT criteria (FPY ≥ 95%, Cpk ≥ 1.33, UPH ≥ 90); wrote unit tests for the test and statistics logic."]),
+   "Built a test program remotely for a new electronic control board (ECB-100) in Python, from Test Specification to PVT. No real equipment was available, so I wrote the logic first, tested it with simulated equipment and boards, and handed it to the client's IT team to deploy.",
+   "Read the Test Specification and defined 8 Test Items, Test Points and PASS/FAIL limits (LSL/USL, one-sided limits supported) in a shared config file.",
+   "Built the Test Station: drivers for DMM, frequency counter, oscilloscope and Test Fixture/Jig (contact check, clamping error); the interfaces can be replaced with real equipment.",
+   "Built the Test Sequence with Test Limits and Test Parameters; it retries automatically on bad contact or instrument errors and writes debug logs.",
+   "Used Python and openpyxl to process test data, analyze Test Failures with a Pareto chart and create Excel reports (Summary, Cpk, Pareto, GR&amp;R, raw data).",
+   "Built a GR&amp;R calculation tool (ANOVA, 10 boards × 3 operators × 3 repeats) to check repeatability and reproducibility; found the 3V3 ripple item at conditional GR&amp;R level and suggested how to improve the measurement.",
+   "Tracked CPK, FPY and UPH against PVT criteria (FPY ≥ 95%, Cpk ≥ 1.33, UPH ≥ 90); wrote unit tests for the test and statistics code."]),
   ("Data Processing &amp; Report Automation Tool (Internal CLI Tool)","Python Developer · Python, Pandas, OpenPyXL, Regex, Schedule",[
-   "Automated the end-of-day aggregation and reconciliation of data from 15–20 scattered files (Excel, CSV, JSON) across operations teams, replacing manual filtering and copy-paste.",
-   "Built a command-line (CLI) tool that scans and merges multi-source data; used Pandas and Regex to normalize dates, phone numbers and transaction IDs, remove duplicates and separate faulty rows.",
-   "Developed a cross-source reconciliation module to detect data discrepancies and compute grouped summary metrics.",
-   "Used OpenPyXL to export reports in the company's standard template, automatically highlighting anomalies; integrated Schedule for daily end-of-day runs.",
-   "Result: cut daily report processing time from over 1 hour to under 30 seconds and eliminated manual-entry errors."]),
+   "Automated the end-of-day work of collecting and comparing data from 15–20 files (Excel, CSV, JSON) from operations teams, replacing manual filtering and copy-paste.",
+   "Built a command-line (CLI) tool that reads and merges data from many sources; used Pandas and Regex to clean dates, phone numbers and transaction IDs, remove duplicates and separate bad rows.",
+   "Built a module that compares data across sources to find differences and calculates summary numbers by group.",
+   "Used OpenPyXL to export reports in the company's template and highlight unusual rows; used Schedule to run it every day.",
+   "Result: daily report time dropped from over 1 hour to under 30 seconds, with no more manual-entry errors."]),
   ("System Monitoring &amp; Task Alert Bot","Python Developer · Python, Requests, Webhooks, Telegram API, Linux Cronjob",[
-   "Addressed slow incident detection caused by checking error logs and team task progress across several separate platforms.",
-   "Built a background service scheduled on a Linux server (Cronjob) to scan system logs, check internal services/APIs and collect task status from Redmine.",
-   "Built a priority filter to flag abnormal errors, stalled code reviews and tasks nearing their deadline.",
-   "Integrated Webhooks and the Telegram API to push instant alerts and an end-of-day summary to the team chat.",
-   "Result: the engineering team detected and handled incidents 50% sooner and saved daily manual checking time."]),
+   "Problem: incidents were found slowly because logs and task progress were checked on several separate platforms.",
+   "Built a background service on a Linux server (Cronjob) that scans system logs, checks internal services/APIs and gets task status from Redmine.",
+   "Built a priority filter to flag unusual errors, stuck code reviews and tasks close to their deadline.",
+   "Used Webhooks and the Telegram API to send alerts and an end-of-day summary to the team chat.",
+   "Result: the team found and fixed incidents 50% sooner and saved time on daily manual checks."]),
   ("Corp - B2B Sales &amp; Salesforce Integration","Bac Ha · Team Lead · Small development team",[
    "Built a B2B sales management system on Odoo integrated with Salesforce to sync customer and business data.",
-   "Led a small development team; customized quotation, sales order and pricing-policy flows for business customers.",
-   "Developed the Odoo – Salesforce integration API, handling data mapping, synchronization and error logging."]),
+   "Led a small development team; customized quotation, sales order and pricing flows for business customers.",
+   "Built the Odoo – Salesforce API for data mapping, syncing and error logging."]),
   ("Tan Phat ERP","Mate JSC · Team Lead · 11 months · 6 members (1 PM, 1 Team Lead, 3 Dev, 1 BA)",[
    "Delivered an ERP for Tan Phat Company (sales and e-commerce): Purchase, Sales, Loyalty, Website and CRM.",
-   "Took requirements from the PM, planned and assigned work, and reviewed technical solutions and code."]),
+   "Got requirements from the PM, planned and assigned tasks, and reviewed solutions and code."]),
   ("E-Contract","Mate JSC · 10 months · 9 members (1 PM, 2 BA, 2 QA, 4 Dev)",[
    "Built a contract management and e-signing solution on Odoo supporting PDF, DOCX, XML and USB Token signing.",
-   "Developed OWL Components with a drag-and-drop interface for configuring signature positions; managed the document lifecycle through to completed signing.",
-   "Developed the USB Token connection plugin and XML signing with digital certificates; took part in code reviews."])],
+   "Built OWL components with drag-and-drop to set signature positions; managed documents from creation until signing is done.",
+   "Built the USB Token plugin and XML signing with digital certificates; joined code reviews."])],
  edu=("Major: Information Technology","Hanoi Open University","03/2024 - Present"),
  out="LuuQuangHuy_CV_EN.pdf")
 
