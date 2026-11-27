@@ -56,7 +56,7 @@ VI = dict(
    "Thực hiện dự án quản lý sản xuất và kho cho công ty dược (Odoo 19 Enterprise), trong đó có phiếu tính giá thành (Costing Sheet).",
    "Xây dựng từ xa chương trình kiểm thử cho khách hàng sản xuất bo mạch điện tử: phân tích Test Specification, cấu hình Test Station và Test Sequence, thực hiện GR&R và xây dựng công cụ tính GR&R, theo dõi CPK/FPY/UPH, xác nhận PVT.",
    "Xây dựng công cụ CLI bằng Python (Pandas, OpenPyXL, Schedule) tự động gom, chuẩn hóa và đối soát số liệu từ 15–20 file, xuất báo cáo Excel; rút thời gian xử lý hằng ngày từ hơn 1 tiếng xuống dưới 30 giây.",
-   "Xây dựng bot Python (Cronjob, Redmine, Webhooks, Telegram) giám sát log, dịch vụ và tiến độ công việc, gửi cảnh báo tức thời; giúp phát hiện sự cố sớm hơn 50%."]),
+   "Python Developer: xây dựng bot (Redmine, Telegram) giám sát log, dịch vụ và tiến độ công việc, gửi cảnh báo tức thời; giúp phát hiện sự cố sớm hơn 50%."]),
   ("Odoo Development","08/2023 - 03/2026","Công ty Cổ phần Công nghệ Mate JSC",[
    "Phát triển các dự án ERP Tân Phát, E-Contract, Quỹ Trò Nghèo Vùng Cao và E-learning.",
    "Phối hợp BA phân tích nghiệp vụ; tùy chỉnh module, phát triển giao diện OWL, tích hợp API, kiểm thử và hỗ trợ vận hành."]),
@@ -124,7 +124,7 @@ EN = dict(
    "Worked on a manufacturing and warehouse project for a pharmaceutical company (Odoo 19 Enterprise), including the Costing Sheet.",
    "Built a test program remotely for a client that makes electronic control boards: read the Test Specification, set up the Test Station and Test Sequence, did GR&amp;R and built a GR&amp;R calculation tool, tracked CPK/FPY/UPH and checked PVT.",
    "Built a Python CLI tool (Pandas, OpenPyXL, Schedule) that collects, cleans and compares data from 15–20 files and exports Excel reports; cut daily work from over 1 hour to under 30 seconds.",
-   "Built a Python bot (Cronjob, Redmine, Webhooks, Telegram) that checks logs, services and task progress and sends alerts right away; the team found problems 50% sooner."]),
+   "Python Developer: built a bot (Redmine, Telegram) that checks logs, services and task progress and sends alerts right away; the team found problems 50% sooner."]),
   ("Odoo Development","08/2023 - 03/2026","Mate Technology JSC",[
    "Developed the Tan Phat ERP, E-Contract, Quy Tro Ngheo Vung Cao (charity fund) and E-learning projects.",
    "Worked with BAs to understand requirements; customized modules, built OWL screens, connected APIs, tested and supported operations."]),
