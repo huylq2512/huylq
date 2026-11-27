@@ -8,7 +8,7 @@ CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 @page{size:A4;margin:26px 0 20px}@page :first{margin:0}
 *{box-sizing:border-box}
-body{margin:0;font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:9.4pt;line-height:1.38;color:#1a1a1a}
+body{margin:0;font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:9.4pt;line-height:1.34;color:#1a1a1a}
 .contact{background:#f4f7fb;text-align:center;font-size:8.2pt;padding:7px 0;color:#333;border-bottom:1px solid #e0e6ee}
 .contact span{margin:0 12px}
 .head{background:#f4f7fb;text-align:center;padding:14px 0 10px;border-bottom:2px solid #1f3a5f;position:relative;min-height:112px}
@@ -17,7 +17,7 @@ body{margin:0;font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:9.4pt;
 .head h1{font-family:'Merriweather',serif;font-size:17pt;margin:0;color:#14284a}
 .head div{font-size:9pt;font-weight:600;color:#1f3a5f;margin-top:4px}
 .page{padding:0 34px}
-h2{font-family:'Merriweather',serif;font-size:10.3pt;letter-spacing:.3px;text-transform:uppercase;color:#14284a;border-bottom:1.6px solid #1f3a5f;padding-bottom:3px;margin:16px 0 8px}
+h2{font-family:'Merriweather',serif;font-size:10.3pt;letter-spacing:.3px;text-transform:uppercase;color:#14284a;border-bottom:1.6px solid #1f3a5f;padding-bottom:3px;margin:12px 0 6px}
 .job{margin-bottom:9px}
 .row{display:flex;justify-content:space-between;font-weight:700;color:#14284a}
 .row .d{font-weight:400;color:#333;font-size:8.6pt}
@@ -25,11 +25,13 @@ h2{font-family:'Merriweather',serif;font-size:10.3pt;letter-spacing:.3px;text-tr
 ul{margin:0;padding-left:15px}
 li{margin:1.5px 0}
 .role{font-style:italic;font-size:8.4pt;color:#555;margin-bottom:6px}
-.proj{margin-bottom:7px;break-inside:avoid-page}
+.proj{margin-bottom:5px;break-inside:avoid-page}
 .proj.first{border-left:2.5px solid #c8d2e0;padding-left:12px;margin-left:8px}
 .pt{font-weight:700;color:#14284a}
 .pt span{font-weight:400;color:#444;font-size:8.6pt}
 .edu b{color:#14284a}
+.edus{display:flex;gap:40px}.edus .edu{flex:1}
+.oth{margin:0 0 3px;font-weight:700;color:#14284a}.oth span{font-weight:400;color:#444;font-size:8.6pt}
 """
 
 def li(items): return "<ul>" + "".join(f"<li>{i}</li>" for i in items) + "</ul>"
@@ -58,6 +60,8 @@ VI = dict(
   ("Odoo Development","08/2023 - 03/2026","Công ty Cổ phần Công nghệ Mate JSC",[
    "Phát triển các dự án ERP Tân Phát, E-Contract, Quỹ Trò Nghèo Vùng Cao và E-learning.",
    "Phối hợp BA phân tích nghiệp vụ; tùy chỉnh module, phát triển giao diện OWL, tích hợp API, kiểm thử và hỗ trợ vận hành."]),
+  ("Odoo Development · Freelancer","03/2025 - 07/2025","Dự án quản lý hồ sơ bệnh án điện tử, quản lý bệnh viện",[
+   "Phân tích quy trình khám chữa bệnh; phát triển quản lý giường bệnh, điều trị nội trú và phân quyền hồ sơ bệnh án điện tử."]),
   ("Odoo Development","11/2022 - 07/2023","Công ty Cổ phần Công nghệ Viindoo",[
    "Nâng cấp sản phẩm từ Odoo 14 lên 15, tối ưu hiệu năng và điều chỉnh tính năng theo yêu cầu nghiệp vụ.",
    "Tham gia triển khai Staging / Production; cập nhật tài liệu kỹ thuật và lịch sử thay đổi."])],
@@ -98,7 +102,15 @@ VI = dict(
    "Xây dựng giải pháp quản lý và ký số hợp đồng trên Odoo, hỗ trợ PDF, DOCX, XML và ký qua USB Token.",
    "Phát triển OWL Components giao diện kéo-thả để cấu hình vị trí ký; quản lý vòng đời tài liệu đến khi ký xong.",
    "Phát triển Plugin kết nối USB Token, ký số XML bằng chứng thư số; tham gia Code Review."])],
- edu=("Chuyên ngành Công nghệ thông tin","Trường Đại học Mở Hà Nội","03/2024 - Hiện tại"),
+ h_other="Dự án khác",
+ other=[
+  ("AVB - Quản lý bán hàng và kế toán","Bắc Hà · Team Lead · Nhóm phát triển nhỏ"),
+  ("Quỹ Trò Nghèo Vùng Cao","Mate JSC · 4 tháng · 5 thành viên (1 PM, 1 BA, 1 QA, 2 Dev)"),
+  ("E-learning","Mate JSC · 4 tháng · 9 thành viên (1 PM, 2 BA, 2 QA, 4 Dev)"),
+  ("Hồ sơ bệnh án điện tử và quản lý bệnh viện","Freelancer · 03/2025 - 07/2025 · 6 thành viên (1 PM, 5 Dev)"),
+  ("Nâng cấp sản phẩm Viindoo","11/2022 - 07/2023 · 21 thành viên (2 PM, 8 QA, 11 Dev)")],
+ edu=[("Chuyên ngành Công nghệ thông tin","Trường Cao đẳng FPT Polytechnic","08/2018 - 06/2021 · GPA 3.3"),
+      ("Chuyên ngành Công nghệ thông tin","Trường Đại học Mở Hà Nội","03/2024 - Hiện tại")],
  out="LuuQuangHuy_CV_VI.pdf")
 
 EN = dict(
@@ -116,6 +128,8 @@ EN = dict(
   ("Odoo Development","08/2023 - 03/2026","Mate Technology JSC",[
    "Developed the Tan Phat ERP, E-Contract, Quy Tro Ngheo Vung Cao (charity fund) and E-learning projects.",
    "Worked with BAs to understand requirements; customized modules, built OWL screens, connected APIs, tested and supported operations."]),
+  ("Odoo Development · Freelancer","03/2025 - 07/2025","Electronic medical records and hospital management project",[
+   "Analyzed the medical examination process; built bed management, inpatient treatment and access control for electronic medical records."]),
   ("Odoo Development","11/2022 - 07/2023","Viindoo Technology JSC",[
    "Upgraded the product from Odoo 14 to 15, improved performance and changed features to fit business needs.",
    "Helped deploy to Staging / Production; updated technical documents and change logs."])],
@@ -156,7 +170,15 @@ EN = dict(
    "Built a contract management and e-signing solution on Odoo supporting PDF, DOCX, XML and USB Token signing.",
    "Built OWL components with drag-and-drop to set signature positions; managed documents from creation until signing is done.",
    "Built the USB Token plugin and XML signing with digital certificates; joined code reviews."])],
- edu=("Major: Information Technology","Hanoi Open University","03/2024 - Present"),
+ h_other="Other Projects",
+ other=[
+  ("AVB - Sales &amp; Accounting Management","Bac Ha · Team Lead · Small development team"),
+  ("Quy Tro Ngheo Vung Cao (charity fund)","Mate JSC · 4 months · 5 members (1 PM, 1 BA, 1 QA, 2 Dev)"),
+  ("E-learning","Mate JSC · 4 months · 9 members (1 PM, 2 BA, 2 QA, 4 Dev)"),
+  ("Electronic Medical Records &amp; Hospital Management","Freelancer · 03/2025 - 07/2025 · 6 members (1 PM, 5 Dev)"),
+  ("Viindoo Product Upgrade","11/2022 - 07/2023 · 21 members (2 PM, 8 QA, 11 Dev)")],
+ edu=[("Major: Information Technology","FPT Polytechnic College","08/2018 - 06/2021 · GPA 3.3"),
+      ("Major: Information Technology","Hanoi Open University","03/2024 - Present")],
  out="LuuQuangHuy_CV_EN.pdf")
 
 def render(d):
@@ -167,7 +189,8 @@ def render(d):
 <h2>{d['h_skill']}</h2><div>Python · SQL · JavaScript · Git · Docker · Linux · API &amp; Webhook · REST API · Pandas · OpenPyXL</div>
 <h2>{d['h_exp']}</h2>{jobs(d['exp'])}
 <h2>{d['h_proj']}</h2><div class="role">{d['role']}</div>{projs(d['proj'])}
-<h2>{d['h_edu']}</h2><div class="edu"><b>{d['edu'][0]}</b><br><span class="co">{d['edu'][1]}</span><br>{d['edu'][2]}</div>
+<h2>{d['h_other']}</h2>{"".join(f'<div class="oth">{t} <span>· {m}</span></div>' for t, m in d['other'])}
+<h2>{d['h_edu']}</h2><div class="edus">{"".join(f'<div class="edu"><b>{a}</b><br><span class="co">{b}</span><br>{c}</div>' for a, b, c in d['edu'])}</div>
 </div></body></html>"""
     src = HERE / f"cv_{d['lang']}.html"
     src.write_text(body, encoding="utf-8")
