@@ -26,7 +26,6 @@ ul{margin:0;padding-left:15px}
 li{margin:1.5px 0}
 .role{font-style:italic;font-size:8.4pt;color:#555;margin-bottom:6px}
 .proj{margin-bottom:5px}.proj li{break-inside:avoid}
-.proj.first{border-left:2.5px solid #c8d2e0;padding-left:12px;margin-left:8px}
 .pt{font-weight:700;color:#14284a;break-after:avoid}
 .pt span{font-weight:400;color:#444;font-size:8.6pt}
 .edu b{color:#14284a}
