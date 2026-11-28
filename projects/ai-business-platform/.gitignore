@@ -1,0 +1,20 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Secrets & local config
+.env
+# Runtime data
+storage/*
+!storage/.gitkeep
+# Node
+node_modules/
+dist/
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
